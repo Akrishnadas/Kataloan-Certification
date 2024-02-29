@@ -35,6 +35,8 @@ WebUI.verifyTextPresent('Add Job Title', false)
 
 WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Title_Name'), 'Automation katalon')
 
+WebUI.scrollToElement(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Description'), 3)
+
 WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Description'), 'Kataloan Automation test enginer')
 
 WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Note'), 'complete Knowledge in api and ui ')

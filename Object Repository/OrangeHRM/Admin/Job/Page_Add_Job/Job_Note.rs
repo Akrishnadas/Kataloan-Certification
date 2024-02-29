@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//textarea[@class='oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical'])[2]</value>
+         <value>//textarea[@placeholder='Add note']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
