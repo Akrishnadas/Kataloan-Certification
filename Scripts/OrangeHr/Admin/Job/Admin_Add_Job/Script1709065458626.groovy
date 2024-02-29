@@ -17,15 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('OrangeHr/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/span_Admin'))
-
-WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/i_Job_oxd-icon bi-chevron-down'))
+CustomKeywords.'com.ea.utility.navigate_to_admin_job.navigate_To_Job'()
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/a_Job Titles'))
 
@@ -43,9 +41,5 @@ WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Note'), 'comp
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Save'))
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/i_Job_oxd-icon bi-caret-down-fill oxd-userd_f084ee'))
-
-WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/a_Logout'))
-
-WebUI.closeBrowser()
+CustomKeywords.'com.ea.utility.Logout.logOut'()
 
