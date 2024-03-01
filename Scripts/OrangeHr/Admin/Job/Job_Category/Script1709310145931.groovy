@@ -17,16 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+CustomKeywords.'com.ea.utility.navigate_to_admin_job.navigate_To_Job'()
 
-WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Username_username'), 'Admin')
+WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Click_Job_Category'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Password_password'), 
-    'hUKwJTbofgPU9eVlw/CnDQ==')
+WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Add_Job_Category'))
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/button_Login'))
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Send_Job_Category'), 'Automation')
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Save_Job'))
+
+WebUI.delay(2)
+
+actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Verify_Job_Category_Added'))
+
+WebUI.verifyMatch(actual_Text, 'Automation', false)
+
+CustomKeywords.'com.ea.utility.Logout.logOut'()
 
