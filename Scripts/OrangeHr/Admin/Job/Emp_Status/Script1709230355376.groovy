@@ -19,8 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
-
 CustomKeywords.'com.ea.utility.navigate_to_admin_job.navigate_To_Job'()
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Emp_status'))

@@ -17,16 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+CustomKeywords.'com.ea.utility.navigate_to_admin_job.navigate_To_Job'()
 
-WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Username_username'), 'Admin')
+WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_shift/Click_Work_Shift'))
 
-WebUI.setEncryptedText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Password_password'), 
-    'hUKwJTbofgPU9eVlw/CnDQ==')
+WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/button_Add'))
 
-WebUI.click(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/button_Login'))
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/input_Shift Name_oxd-input oxd-input--focus'), 
+    'Night Shift')
 
-WebUI.maximizeWindow()
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/input'), 'normal')
+
+WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/button_Save'))
+
+WebUI.delay(3)
+
+actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Page_shift/verify_the_Add_Shift_Text'))
+
+WebUI.verifyMatch(actual_Text, 'Night Shift', false)
+
+CustomKeywords.'com.ea.utility.Logout.logOut'()
 
