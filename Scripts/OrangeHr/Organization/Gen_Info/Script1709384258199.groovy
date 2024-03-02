@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+CustomKeywords.'com.ea.utility.Navigate_To_Organization.navigate_Organitaion'()
+
+WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Page_Organization_GI/a_General Information'))
+
+WebUI.verifyTextPresent('OrangeHRM', false)
+
+WebUI.closeBrowser()
+

@@ -20,12 +20,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class navigate_to_admin_job {
-
+public class Navigate_To_Organization {
+	
 	@Keyword
-	def navigate_To_Job() {
-		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/span_Admin'))
-
-		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/i_Job_oxd-icon bi-chevron-down'))
+	def navigate_Organitaion() {
+		
+		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Page_Organization_GI/span_Admin'))
+		
+		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Page_Organization_GI/span_Organization'))
 	}
+	
 }

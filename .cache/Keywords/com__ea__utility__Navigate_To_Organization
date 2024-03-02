@@ -1,11 +1,11 @@
 {
-  "keywordFileContentHash": "8A08E9DA312303CFC8EA09EDF3BF8C1B",
+  "keywordFileContentHash": "B8788FB8F6980FBA4E77B79D2011DBB6",
   "keywordClasses": [
     {
-      "name": "com.ea.utility.navigate_to_admin_job",
+      "name": "com.ea.utility.Navigate_To_Organization",
       "keywordMethods": [
         {
-          "name": "navigate_To_Job",
+          "name": "navigate_Organitaion",
           "parameters": [],
           "javadoc": ""
         }
