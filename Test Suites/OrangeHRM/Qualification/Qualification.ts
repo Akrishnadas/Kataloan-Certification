@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Organazation_suites</name>
+   <name>Qualification</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,33 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>b5d3c73f-070f-4ae2-b807-5f15c03c169a</testSuiteGuid>
+   <testSuiteGuid>0e4d1116-9041-43a5-a427-8524dda8de31</testSuiteGuid>
    <testCaseLink>
-      <guid>bc96e27e-ac76-43e4-9702-17c592c135e0</guid>
+      <guid>c172edfa-f744-4dc2-b0ac-6098b516b1ba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OrangeHr/Admin/Organization/Gen_Info</testCaseId>
+      <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Page_Skill</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>278f88aa-0c36-4f7d-b497-548feb6e3ee8</guid>
+      <guid>711e24ab-f966-446b-bc12-e1937a63ad33</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OrangeHr/Admin/Organization/Location</testCaseId>
+      <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Delete_skill</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f620901f-118f-4c5e-8ef4-50e1db5ef5ea</guid>
+      <guid>e97c427c-e290-4eb1-ab64-d17e8c94488b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OrangeHr/Admin/Organization/Structure</testCaseId>
+      <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Education</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>daf3a8ed-ab7c-4d37-b925-c838ff6566a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Delete_Education</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
