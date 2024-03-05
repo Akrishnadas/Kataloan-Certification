@@ -21,13 +21,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Navigate_To_Organization {
-	
+
 	@Keyword
 	def navigate_Organitaion() {
-		
+
 		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Page_Organization_GI/span_Admin'))
-		
+
 		WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Page_Organization_GI/span_Organization'))
 	}
-	
 }

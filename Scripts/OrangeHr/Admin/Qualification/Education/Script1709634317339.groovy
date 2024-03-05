@@ -19,11 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'com.ea.utility.Navigate_To_Organization.navigate_Organitaion'()
+CustomKeywords.'com.ea.utility.navigate_to_Qualification.Qualification'()
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Structure/Structure'))
+WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/a_Education'))
 
-WebUI.verifyTextPresent('OrangeHRM', false)
+WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/button_Add'))
 
-WebUI.closeBrowser()
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/input_Level_oxd-input oxd-input--focus'), 
+    'high level')
+
+WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/button_Save'))
+
+actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Qualification/Page_Education/Verify_Education'))
+
+WebUI.verifyMatch(actual_Text, 'high level', false)
+
+CustomKeywords.'com.ea.utility.Logout.logOut'()
 
