@@ -23,20 +23,20 @@ CustomKeywords.'com.ea.utility.Navigate_To_Organization.navigate_Organitaion'()
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/Click_Location'))
 
-WebUI.verifyTextPresent(GlobalVariable.Verify_text_location, false)
+WebUI.verifyTextPresent('Locations', false)
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/Click_Add'))
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/input_Name_oxd-input oxd-input--focus'), 
-    GlobalVariable.Location_PIN)
+    '678613')
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/div_-- Select --'))
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/input_Name_oxd-input oxd-input--focus'), 
-    GlobalVariable.Location_Ph)
+    '8086478379')
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/textarea_Address_oxd-textarea oxd-textarea-_2f3678'), 
-    GlobalVariable.Location_area)
+    'hot')
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/button_Save'))
 

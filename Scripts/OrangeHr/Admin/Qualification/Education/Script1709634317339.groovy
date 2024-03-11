@@ -26,13 +26,13 @@ WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/button_Add'))
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/input_Level_oxd-input oxd-input--focus'), 
-    Education_level)
+    'high level')
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Education/button_Save'))
 
 actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Qualification/Page_Education/Verify_Education'))
 
-WebUI.verifyMatch(actual_Text, Education_level, false)
+WebUI.verifyMatch(actual_Text, 'high level', false)
 
 CustomKeywords.'com.ea.utility.Logout.logOut'()
 

@@ -17,12 +17,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Page_Skill</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4d1a06b4-2a03-4d29-8b86-63f0f9679b7b</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>711e24ab-f966-446b-bc12-e1937a63ad33</guid>
@@ -37,12 +31,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Education</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>10d3633b-d78c-4c78-837e-87f30f114b23</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>daf3a8ed-ab7c-4d37-b925-c838ff6566a1</guid>
@@ -71,12 +59,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Qualification/Language</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>8b98cfd9-bdda-4c2e-ae37-c24f5fb313a6</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d2da02f7-85a2-441d-8bf8-42bd4efe354d</guid>

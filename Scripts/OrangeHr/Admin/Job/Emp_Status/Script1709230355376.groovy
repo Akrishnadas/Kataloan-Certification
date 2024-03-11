@@ -25,7 +25,7 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Emp_status'))
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Add_Status'))
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Send_name'), GlobalVariable.Admin_Status_type)
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Send_name'), 'Full-time')
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Save_Emp_Status'))
 
@@ -33,7 +33,7 @@ WebUI.delay(3)
 
 actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Emp_Status/verify_the_text'))
 
-WebUI.verifyMatch(actual_Text, GlobalVariable.Admin_Status_type, false)
+WebUI.verifyMatch(actual_Text, 'Full-time', false)
 
 CustomKeywords.'com.ea.utility.Logout.logOut'()
 

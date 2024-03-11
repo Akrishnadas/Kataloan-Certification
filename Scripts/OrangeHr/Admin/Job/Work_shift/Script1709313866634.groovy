@@ -26,9 +26,9 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_shift/Click_Work_Shift'))
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/button_Add'))
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/input_Shift Name_oxd-input oxd-input--focus'), 
-    Shift_type)
+    'Night Shift')
 
-WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/input'), note)
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/input'), 'normal')
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_shift/button_Save'))
 
@@ -36,7 +36,7 @@ WebUI.delay(3)
 
 actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Page_shift/verify_the_Add_Shift_Text'))
 
-WebUI.verifyMatch(actual_Text, Shift_type, false)
+WebUI.verifyMatch(actual_Text, 'Night Shift', false)
 
 CustomKeywords.'com.ea.utility.Logout.logOut'()
 

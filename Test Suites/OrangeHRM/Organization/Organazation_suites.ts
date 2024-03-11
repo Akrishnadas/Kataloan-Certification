@@ -17,12 +17,6 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Organization/Gen_Info</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4ce0164f-4e59-4f6a-9c93-b9f0826aa694</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>278f88aa-0c36-4f7d-b497-548feb6e3ee8</guid>

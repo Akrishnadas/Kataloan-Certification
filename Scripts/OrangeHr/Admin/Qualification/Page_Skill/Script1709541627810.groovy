@@ -29,7 +29,7 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/Add'))
 WebUI.setText(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/input_Name'), 'AAAAA' + RandomStringUtils.randomNumeric(
         5))
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/set_description'), dec)
+WebUI.setText(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/set_description'), 'test')
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/button_Save'))
 

@@ -25,7 +25,7 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Click_Job_Cate
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Add_Job_Category'))
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Send_Job_Category'), GlobalVariable.Admin_job_Category)
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Send_Job_Category'), 'Automation')
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Save_Job'))
 
@@ -33,7 +33,7 @@ WebUI.delay(2)
 
 actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Page_Job_Category/Verify_Job_Category_Added'))
 
-WebUI.verifyMatch(actual_Text, GlobalVariable.Admin_job_Category, false)
+WebUI.verifyMatch(actual_Text, 'Automation', false)
 
 CustomKeywords.'com.ea.utility.Logout.logOut'()
 
