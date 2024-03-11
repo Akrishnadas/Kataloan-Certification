@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5f5a3cf9-6ce3-415c-9dca-d20232bb7a5b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4ce0164f-4e59-4f6a-9c93-b9f0826aa694</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'OrangeHRM'</defaultValue>
+      <description></description>
+      <id>4ce0164f-4e59-4f6a-9c93-b9f0826aa694</id>
+      <masked>false</masked>
+      <name>Text</name>
+   </variable>
 </TestCaseEntity>

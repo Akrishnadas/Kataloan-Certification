@@ -26,7 +26,7 @@ CustomKeywords.'com.ea.utility.navigate_to_Qualification.clickElement'(findTestO
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Language/button_Add'))
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Language/input_Name_oxd-input oxd-input--focus'), 
-    'amalayalam')
+    lang)
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Language/button_Save'))
 

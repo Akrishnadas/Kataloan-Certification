@@ -23,7 +23,7 @@ CustomKeywords.'com.ea.utility.Navigate_To_Organization.navigate_Organitaion'()
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Page_Organization_GI/a_General Information'))
 
-WebUI.verifyTextPresent('OrangeHRM', false)
+WebUI.verifyTextPresent(Text, false)
 
 WebUI.closeBrowser()
 

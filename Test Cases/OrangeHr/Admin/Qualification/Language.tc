@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0a273c6d-ddd7-4489-9b37-2a59e99830ce</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8b98cfd9-bdda-4c2e-ae37-c24f5fb313a6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Amalayalam'</defaultValue>
+      <description></description>
+      <id>8b98cfd9-bdda-4c2e-ae37-c24f5fb313a6</id>
+      <masked>false</masked>
+      <name>lang</name>
+   </variable>
 </TestCaseEntity>

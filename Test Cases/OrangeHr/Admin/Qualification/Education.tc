@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>083b7495-8425-492c-8aac-46278e42a313</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>10d3633b-d78c-4c78-837e-87f30f114b23</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'high level'</defaultValue>
+      <description></description>
+      <id>10d3633b-d78c-4c78-837e-87f30f114b23</id>
+      <masked>false</masked>
+      <name>Education_level</name>
+   </variable>
 </TestCaseEntity>

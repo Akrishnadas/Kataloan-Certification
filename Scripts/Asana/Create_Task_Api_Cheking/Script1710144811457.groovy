@@ -17,23 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+Respones = WS.sendRequest(findTestObject('Asana/Create task'))
 
-CustomKeywords.'com.ea.utility.navigate_to_admin_job.navigate_To_Job'()
+WS.verifyResponseStatusCode(Respones, 201)
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Emp_status'))
+WS.verifyElementPropertyValue(Respones, 'data.resource_type', 'task')
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Add_Status'))
+WS.verifyElementPropertyValue(Respones, 'data.name', 'Katalon Automated task')
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Send_name'), GlobalVariable.Admin_Status_type)
+WS.verifyElementPropertyValue(Respones, 'data.projects[0].name', 'Our first project')
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Emp_Status/Save_Emp_Status'))
-
-WebUI.delay(3)
-
-actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Emp_Status/verify_the_text'))
-
-WebUI.verifyMatch(actual_Text, GlobalVariable.Admin_Status_type, false)
-
-CustomKeywords.'com.ea.utility.Logout.logOut'()
+WS.getElementText(Respones, 'data.projects[0].gid')
 

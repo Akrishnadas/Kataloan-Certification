@@ -38,5 +38,17 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Job/Work_shift</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a48da96d-ec51-408b-bdb6-3b0c0559afe8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>acf2c245-8d20-4915-957f-175519253eb2</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
