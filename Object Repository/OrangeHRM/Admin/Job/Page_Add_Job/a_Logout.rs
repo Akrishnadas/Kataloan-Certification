@@ -6,12 +6,12 @@
    <elementGuidId>ad33a00c-1436-4a4c-898b-b598977ba982</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='app']/div/div/header/div/div[2]/ul/li/ul/li[4]/a</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>li:nth-of-type(4) > a.oxd-userdropdown-link</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='User Management'])[1]/preceding::a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

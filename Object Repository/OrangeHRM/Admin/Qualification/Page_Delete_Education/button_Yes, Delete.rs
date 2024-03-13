@@ -6,12 +6,12 @@
    <elementGuidId>e99fad69-6fd1-43ce-b965-5a94c6578edc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//button[@type='button'])[17]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>button.oxd-button.oxd-button--medium.oxd-button--label-danger.orangehrm-button-margin</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='app']/div[3]/div/div/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
