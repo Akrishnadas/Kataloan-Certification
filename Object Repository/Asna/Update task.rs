@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Projects</name>
+   <name>Update task</name>
    <tag></tag>
-   <elementGuidId>75c8b6f2-4901-4025-a236-30fbbdaecf90</elementGuidId>
+   <elementGuidId>3bdc8dbc-0ce8-43dd-832b-dd7f868697af</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>true</autoUpdateContent>
+   <autoUpdateContent>false</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;data\&quot;:{\n  \t\&quot;name\&quot;: \&quot;Updated katalon api test\&quot;,\n    \&quot;assignee\&quot; : \&quot;Aruna\&quot;\n  }\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>text/plain</value>
+      <webElementGuid>3ae817ad-8007-470f-8186-be02ea319088</webElementGuid>
+   </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer 2/1206784948256851/1206785098413191:13660e93861afeffcb69665d809de721</value>
-      <webElementGuid>99316a8e-b745-44b3-8eb4-8bf780f25e7f</webElementGuid>
+      <webElementGuid>78ff53a8-a848-421c-8451-b04484753697</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.8</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://app.asana.com/api/1.0/projects</restUrl>
+   <restRequestMethod>PUT</restRequestMethod>
+   <restUrl>https://app.asana.com/api/1.0/tasks/1206838437281529</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -33,13 +45,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <variables>
-      <defaultValue>GlobalVariable.Url</defaultValue>
-      <description></description>
-      <id>cb54cb24-0ddf-48fb-ad12-e6c48e5cf294</id>
-      <masked>false</masked>
-      <name>URL</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -52,9 +57,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, 'data[0].gid', &quot;1206784995783773&quot;)
-WS.verifyElementPropertyValue(response, 'data[0].gid', &quot;1206784995783773&quot;)
-WS.verifyElementPropertyValue(response, 'data[0].name', &quot;Our first project&quot;)</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

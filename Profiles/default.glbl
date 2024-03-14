@@ -9,9 +9,4 @@
       <initValue>''</initValue>
       <name>project_id</name>
    </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'app.asana.com/'</initValue>
-      <name>Url</name>
-   </GlobalVariableEntity>
 </GlobalVariableEntities>
