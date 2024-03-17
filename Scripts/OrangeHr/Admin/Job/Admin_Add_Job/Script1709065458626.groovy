@@ -29,15 +29,15 @@ WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Job/Page_Add_Job/a
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Add'))
 
-WebUI.verifyTextPresent('Add Job Title', false)
+WebUI.verifyTextPresent(GlobalVariable.Add_job_Verification, false)
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Title_Name'), 'Automation katalon')
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Title_Name'), GlobalVariable.Job_title)
 
 WebUI.scrollToElement(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Description'), 3)
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Description'), 'Kataloan Automation test enginer')
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Description'), GlobalVariable.Job_Dec)
 
-WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Note'), 'complete Knowledge in api and ui ')
+WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Note'), GlobalVariable.Job_Note)
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Save'))
 

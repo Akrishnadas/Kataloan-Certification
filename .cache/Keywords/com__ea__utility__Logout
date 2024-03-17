@@ -1,16 +1,15 @@
 {
-  "keywordFileContentHash": "505521CFDD2D94FF88A20DA484F143F6",
+  "keywordFileContentHash": "0613B948D7E4A693166FDC458EDBA58A",
   "keywordClasses": [
     {
       "name": "com.ea.utility.Logout",
       "keywordMethods": [
         {
           "name": "logOut",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

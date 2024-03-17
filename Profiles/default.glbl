@@ -9,4 +9,24 @@
       <initValue>''</initValue>
       <name>project_id</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Add Job Title'</initValue>
+      <name>Add_job_Verification</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Automation katalon'</initValue>
+      <name>Job_title</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Kataloan Automation test enginer'</initValue>
+      <name>Job_Dec</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'complete Knowledge in api and ui '</initValue>
+      <name>Job_Note</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
