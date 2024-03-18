@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Page_Skill</name>
+   <name>checkpoint</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0f285fa7-1b18-4b73-a741-6428a1566e35</testCaseGuid>
+   <testCaseGuid>24e39532-81ca-48ce-b07f-99d074b14660</testCaseGuid>
 </TestCaseEntity>

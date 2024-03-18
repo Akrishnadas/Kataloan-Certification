@@ -31,6 +31,12 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/OrangeHr/Admin/Job/Job_Category</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>352ee3cf-c3eb-4d90-8df4-7c5f08fb3ff1</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>ae3e379b-2cd1-4111-be3a-28464e6090d9</guid>

@@ -29,4 +29,9 @@
       <initValue>'complete Knowledge in api and ui '</initValue>
       <name>Job_Note</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Full-time'</initValue>
+      <name>Emp_Status</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Page_Skill</name>
+   <name>New Test Case</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>0f285fa7-1b18-4b73-a741-6428a1566e35</testCaseGuid>
+   <testCaseGuid>6a37eeb6-d97c-49c9-889d-2320c5530d99</testCaseGuid>
 </TestCaseEntity>

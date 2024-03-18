@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Nationalities</name>
+   <name>checkpoint</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>2c1f6001-6fe8-4e27-a8c4-a194f95e2a0a</testSuiteGuid>
+   <testSuiteGuid>4c5f4c3d-741c-46ac-845a-e00c5c8d8864</testSuiteGuid>
    <testCaseLink>
-      <guid>983bfe8f-0add-457a-ad49-fcc388c14099</guid>
+      <guid>cc39c21b-ffa8-4171-b3ef-c4d5222c7afc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/OrangeHr/Admin/Nationality/Page_Nationality</testCaseId>
+      <testCaseId>Test Cases/OrangeHr/login/checkpoint</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

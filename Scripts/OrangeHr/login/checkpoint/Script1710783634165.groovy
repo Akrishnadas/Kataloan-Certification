@@ -17,19 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('')
 
-WebUI.takeScreenshotAsCheckpoint('checkpoint')
+WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/span_Admin'))
+WebUI.maximizeWindow()
 
-WebUI.delay(4)
+WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Username_username'), 'Admin')
 
-WebUI.verifyElementPresent(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'), 5)
+WebUI.setEncryptedText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Password_password'), 
+    'hUKwJTbofgPU9eVlw/CnDQ==')
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'))
+WebUI.takeFullPageScreenshotAsCheckpoint('checkpoint', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/button_Add'))
+WebUI.click(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/button_Login'))
 
-WebUI.takeScreenshot()
+WebUI.closeBrowser()
 
