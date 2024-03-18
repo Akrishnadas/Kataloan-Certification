@@ -17,10 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Username_username'), '')
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Password_password'), '')
@@ -31,5 +27,5 @@ WebUI.maximizeWindow()
 
 WebUI.verifyTextPresent('Required', false)
 
-WebUI.closeBrowser()
+
 

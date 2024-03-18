@@ -41,5 +41,5 @@ WebUI.setText(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Job_Note'), Globa
 
 WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/Save'))
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
+//CustomKeywords.'com.ea.utility.Logout.logOut'()
 

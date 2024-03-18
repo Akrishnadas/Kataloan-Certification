@@ -27,5 +27,3 @@ WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Delete_Skill/button_Yes, Delete'))
 
-WebUI.closeBrowser()
-

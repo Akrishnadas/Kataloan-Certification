@@ -31,5 +31,5 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/button_Add'))
 
 WebUI.takeScreenshot()
 
-WebUI.closeBrowser()
+
 

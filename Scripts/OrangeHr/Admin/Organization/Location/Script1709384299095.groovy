@@ -40,5 +40,3 @@ WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Loc
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Organization/Location/Page_OrangeHRM/button_Save'))
 
-WebUI.closeBrowser()
-

@@ -47,9 +47,12 @@ def tearDown() {
 /**
  * Run before each test case starts.
  */
-@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
+@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
 def setupTestCase() {
 	// Put your code here.
+	WebUI.openBrowser('')
+	
+	WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 }
 
 /**
@@ -58,6 +61,7 @@ def setupTestCase() {
 @TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
 def tearDownTestCase() {
 	// Put your code here.
+	WebUI.closeBrowser()
 }
 
 /**

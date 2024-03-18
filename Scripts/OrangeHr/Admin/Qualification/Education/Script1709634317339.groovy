@@ -34,5 +34,3 @@ actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Qualification/Page_E
 
 WebUI.verifyMatch(actual_Text, 'high level', false)
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
-

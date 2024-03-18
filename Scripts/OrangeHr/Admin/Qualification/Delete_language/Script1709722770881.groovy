@@ -27,5 +27,3 @@ WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Delete_Education/button_Yes, Delete'))
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
-

@@ -30,5 +30,3 @@ WebUI.setText(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Pa
 
 WebUI.click(findTestObject('Object Repository/OrangeHRM/Admin/Qualification/Page_Licence/button_Save'))
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
-

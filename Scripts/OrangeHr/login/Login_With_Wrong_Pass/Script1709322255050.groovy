@@ -17,10 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Username_username'), 'Admin')
 
 WebUI.setText(findTestObject('Object Repository/OrangeHRM/OrangeHr_Login/Page_OrangeHRM/input_Password_password'), '1234')
@@ -32,6 +28,4 @@ WebUI.maximizeWindow()
 actual_Text = WebUI.getText(findTestObject('OrangeHRM/OrangeHr_Login/Page_OrangeHRM/Validating_output'))
 
 WebUI.verifyMatch(actual_Text, 'Invalid credentials', false)
-
-WebUI.closeBrowser()
 
