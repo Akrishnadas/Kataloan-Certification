@@ -25,5 +25,3 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Organization/Page_Organization_GI/a_
 
 WebUI.verifyTextPresent('OrangeHRM', false)
 
-WebUI.closeBrowser()
-

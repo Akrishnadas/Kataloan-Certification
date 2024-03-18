@@ -38,5 +38,5 @@ actual_Text = WebUI.getText(findTestObject('OrangeHRM/Admin/Job/Page_shift/verif
 
 WebUI.verifyMatch(actual_Text, 'Night Shift', false)
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
+//CustomKeywords.'com.ea.utility.Logout.logOut'()
 

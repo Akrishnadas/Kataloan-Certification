@@ -35,5 +35,3 @@ WebUI.click(findTestObject('OrangeHRM/Admin/Qualification/Page_Skill/button_Save
 
 WebUI.delay(4)
 
-CustomKeywords.'com.ea.utility.Logout.logOut'()
-

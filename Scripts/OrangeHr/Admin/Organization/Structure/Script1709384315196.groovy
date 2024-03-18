@@ -27,5 +27,5 @@ WebUI.delay(4)
 
 WebUI.verifyTextPresent('OrangeHRM', false)
 
-WebUI.closeBrowser()
+
 
