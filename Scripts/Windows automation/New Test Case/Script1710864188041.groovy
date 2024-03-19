@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Windows.startApplicationWithTitle('C:\\Windows\\notepad.exe', '')
+
+Windows.setText(findWindowsObject('Object Repository/Notepad/Document'), 'Happy New Test Case')
+
+Windows.click(findWindowsObject('Object Repository/Notepad/Button'))
+
+Windows.click(findWindowsObject('Object Repository/Notepad/Button(1)'))
+
+Windows.closeApplication()
+
