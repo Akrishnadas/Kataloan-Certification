@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>de3acc51-c7fa-4de8-9bc8-bb3e54e2f964</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>352ee3cf-c3eb-4d90-8df4-7c5f08fb3ff1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Automation'</defaultValue>
+      <description></description>
+      <id>352ee3cf-c3eb-4d90-8df4-7c5f08fb3ff1</id>
+      <masked>false</masked>
+      <name>Job_category</name>
+   </variable>
 </TestCaseEntity>

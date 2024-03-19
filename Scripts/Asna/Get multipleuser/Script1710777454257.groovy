@@ -17,19 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+Respones = WS.sendRequestAndVerify(findTestObject('Asna/Get mutiple user'))
 
-WebUI.takeScreenshotAsCheckpoint('checkpoint')
+WS.verifyResponseStatusCode(Respones, 200)
 
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/span_Admin'))
+invalid = WS.sendRequest(findTestObject('Asna/multiple user invalid cred'))
 
-WebUI.delay(4)
+WS.verifyResponseStatusCode(invalid, 401)
 
-WebUI.verifyElementPresent(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'), 5)
-
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'))
-
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/button_Add'))
-
-WebUI.takeScreenshot()
+WS.verifyElementPropertyValue(invalid, 'errors[0].message', 'Not Authorized')
 

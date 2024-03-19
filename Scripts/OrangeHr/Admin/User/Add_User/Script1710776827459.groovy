@@ -17,19 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('OrangeHr/login/Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.takeScreenshotAsCheckpoint('checkpoint')
-
-WebUI.click(findTestObject('OrangeHRM/Admin/Job/Page_Add_Job/span_Admin'))
-
-WebUI.delay(4)
-
-WebUI.verifyElementPresent(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'), 5)
-
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/a_Nationalities'))
-
-WebUI.click(findTestObject('OrangeHRM/Admin/Nationality/button_Add'))
-
-WebUI.takeScreenshot()
-
