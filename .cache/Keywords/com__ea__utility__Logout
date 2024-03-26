@@ -6,10 +6,11 @@
       "keywordMethods": [
         {
           "name": "logOut",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
